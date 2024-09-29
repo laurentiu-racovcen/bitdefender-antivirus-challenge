@@ -8,7 +8,7 @@ Initially, the following global variables are declared:
 3. The variables needed by the "getline" function;
 4. The variable "result" in which the verdict of each URL will be stored.
 
-**"main" function**
+## **"main" function**
 
 1. Define 2 variables of type FILE* (fin, fout) to access files:
 - urls.in, from which each URL, to be processed, is read;
@@ -20,7 +20,7 @@ Initially, the following global variables are declared:
 6. Exiting the while loop, the program releases the dynamically allocated memory in "url_current";
 7. Close the "fin" and "fout" files.
 
-**"task1_part1(void)" function**
+## **"task1_part1(void)" function**
 
 > Within the task1_part1(void) function, the first part of detecting malicious URLs (in the URL Host) takes place. In this part, it checks if the URL Host contains a domain from the database or if the Host contains certain strings.
 
@@ -36,7 +36,7 @@ The detection was performed using the following algorithm:
 - whether the host contains the string "ypa"
 6. Close the "fin_tests" file.
 
-**"task1_part2(void)" function**
+## **"task1_part2(void)" function**
 
 > In task1_part2(void) the second part of the malicious URL detection (in the PATH of the URL) takes place. In this part it checks if the path of the URL contains a file with an extension (different from: ".html", ".htm", ".php"), which can be malicious.
 
@@ -61,7 +61,7 @@ Initially, the following global variables are declared:
 1. A structure ("traffic_structure") in which 4 pointers (char *response_port; char *flow_duration; char *flow_pkts_payload; char *fwd_pkts_tot;) are declared, with which memory will be allocated for further traffic processing;
 2. A struct variable "traffic" of type "traffic_structure".
 
-**"main" function**
+## **"main" function**
 
 1. Define 2 variables of type FILE* (tin, tout) to access the files:
 - traffic.in, from which each traffic capture to be processed is read;
@@ -73,7 +73,7 @@ Initially, the following global variables are declared:
 6. Exiting the while loop, the program releases the dynamically allocated memory in "traffic_current";
 7. Close the files "tin" and "tout".
 
-**"task2_part1(void)" function**
+## **"task2_part1(void)" function**
 
 > Within the task2_part1(void) function, the first part of the malicious traffic detection takes place, using a database. In this part the values corresponding to the traffic capture and columns "flow_duration", "flow_pkts_payload.avg" are checked. Depending on these values, the result is displayed 0 - if the traffic is benign or 1 - if the traffic is malicious.
 
@@ -88,7 +88,7 @@ The detection was performed using the following algorithm:
 8. In traffic.flow_pkts_payload, copy the value from the column "flow_pkts_payload.avg";
 9. Check if the length of the string in the "flow_pkkts_payload" column is 3 and if this string is "0.0". If these conditions are met, result is assigned the value 0.
 
-**"task2_part2(void)" function**
+## **"task2_part2(void)" function**
 
 > Within the task2_part2(void) function, the second part of the malicious traffic detection takes place, using a database. In this part the values corresponding to the traffic capture and columns "fwd_pkts_tot", "response_port" are checked. Depending on these values, the result is displayed 0 - if the traffic is benign or 1 - if the traffic is malicious.
 

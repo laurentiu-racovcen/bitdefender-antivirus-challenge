@@ -1,34 +1,15 @@
-<<<<<<< HEAD
-==26628== Memcheck, a memory error detector
-==26628== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==26628== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==26628== Command: ./my_av
-==26628== Parent PID: 26627
-==26628== 
-==26628== error calling PR_SET_PTRACER, vgdb might block
-==26628== 
-==26628== HEAP SUMMARY:
-==26628==     in use at exit: 0 bytes in 0 blocks
-==26628==   total heap usage: 10,012 allocs, 10,012 frees, 5,897,668 bytes allocated
-==26628== 
-==26628== All heap blocks were freed -- no leaks are possible
-==26628== 
-==26628== For lists of detected and suppressed errors, rerun with: -s
-==26628== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-=======
-==1477== Memcheck, a memory error detector
-==1477== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1477== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1477== Command: ./my_av
-==1477== Parent PID: 1476
-==1477== 
-==1477== 
-==1477== HEAP SUMMARY:
-==1477==     in use at exit: 0 bytes in 0 blocks
-==1477==   total heap usage: 10,012 allocs, 10,012 frees, 5,897,668 bytes allocated
-==1477== 
-==1477== All heap blocks were freed -- no leaks are possible
-==1477== 
-==1477== For lists of detected and suppressed errors, rerun with: -s
-==1477== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
->>>>>>> 7df1e59 (Bitdefender Challenge)
+==6749== Memcheck, a memory error detector
+==6749== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6749== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==6749== Command: ./my_av
+==6749== Parent PID: 6748
+==6749== 
+==6749== 
+==6749== HEAP SUMMARY:
+==6749==     in use at exit: 0 bytes in 0 blocks
+==6749==   total heap usage: 10,012 allocs, 10,012 frees, 5,897,668 bytes allocated
+==6749== 
+==6749== All heap blocks were freed -- no leaks are possible
+==6749== 
+==6749== For lists of detected and suppressed errors, rerun with: -s
+==6749== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
